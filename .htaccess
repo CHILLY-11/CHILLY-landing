@@ -1,0 +1,42 @@
+# Security Headers
+<IfModule mod_headers.c>
+  # Content Security Policy
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
+  
+  # Prevent clickjacking
+  Header set X-Frame-Options "DENY"
+  
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Enable HSTS
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  
+  # Control referrer information
+  Header set Referrer-Policy "no-referrer-when-downgrade"
+  
+  # Permissions policy
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  
+  # Remove PHP version info
+  Header unset X-Powered-By
+</IfModule>
+
+# Force HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Block access to sensitive files
+<FilesMatch "^\.(?!well-known)">
+  Order deny,allow
+  Deny from all
+</FilesMatch>
+
+# Disable server signature
+ServerSignature Off 

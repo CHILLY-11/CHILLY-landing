@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+    <title>Chilly - WorldMobile Earthnode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-small">
+                <img src="assets/ChiliPepperLogo.png" alt="Chilly" class="header-logo">
+                <span class="site-title">Chilly</span>
+            </div>
+            <div class="sun-container">
+                <span class="rotating-sun" id="rotatingSun">🌞</span>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#staking" class="nav-link">Staking</a></li>
+                    <li><a href="#storage" class="nav-link">Storage</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background"></div>
+            <div class="hero-corner"></div>
+            <div class="container">
+                <div class="mascot-container">
+                    <img src="assets/ChiliPepperLogo.png" alt="Chilly the Chili Pepper" class="mascot">
+                </div>
+                <h1 class="pixel-text">Turn up the Heat with Chilly!</h1>
+                <p class="subheading">Your spicy gateway to WorldMobile staking rewards</p>
+                <a href="https://worldmobile.io/the-chain#staking" class="btn cta-btn" target="_blank" rel="noopener noreferrer">Stake Now 🔥</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">What's Chilly?</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Chilly is a WorldMobile Earthnode that brings the heat to decentralized telecom:</p>
+                        <ul class="pixelated-list">
+                            <li>Processes telecom data</li>
+                            <li>Hosts decentralized storage</li>
+                            <li>Powers Minutes Network validator nodes</li>
+                            <li>Lets you earn WMTX staking rewards</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="pixel-box">
+                            <div class="pixel-node">
+                                <!-- Simple pulsing center -->
+                                <div class="pulse-center"></div>
+                                <!-- Additional small pulse centers -->
+                                <div class="small-pulse-center small-center-1"></div>
+                                <div class="small-pulse-center small-center-2"></div>
+                                <div class="small-pulse-center small-center-3"></div>
+                                <div class="small-pulse-center small-center-4"></div>
+                                <!-- Network nodes -->
+                                <div class="network-node node-1"></div>
+                                <div class="network-node node-2"></div>
+                                <div class="network-node node-3"></div>
+                                <div class="network-node node-4"></div>
+                                <div class="network-node node-5"></div>
+                                <div class="network-node node-6"></div>
+                                <!-- Connection lines -->
+                                <div class="connection-line line-1"></div>
+                                <div class="connection-line line-2"></div>
+                                <div class="connection-line line-3"></div>
+                                <div class="connection-line line-4"></div>
+                                <div class="connection-line line-5"></div>
+                                <div class="connection-line line-6"></div>
+                                <!-- Main pulse waves -->
+                                <div class="signal-pulse signal-pulse-1"></div>
+                                <div class="signal-pulse signal-pulse-2"></div>
+                                <div class="signal-pulse signal-pulse-3"></div>
+                                <div class="signal-pulse signal-pulse-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staking & Rewards -->
+        <section class="staking" id="staking">
+            <div class="container">
+                <h2 class="section-title">Spicy Staking & Rewards</h2>
+                <p>Staking with Chilly is like adding hot sauce to your crypto portfolio!</p>
+                
+                <div class="staking-explanation">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Connect your wallet</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Choose how much WMTX to stake</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Watch your rewards grow!</p>
+                    </div>
+                </div>
+                
+                <div class="staking-calculator">
+                    <div class="input-container">
+                        <label for="staking-amount">Calculate your rewards at 10% APR:</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="staking-amount" min="1" value="1000" class="staking-input">
+                            <span class="input-suffix">WMTX</span>
+                        </div>
+                        <button id="calculate-btn" class="btn">Calculate</button>
+                    </div>
+                </div>
+                
+                <div class="rewards-chart-container">
+                    <canvas id="rewardsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decentralized Storage -->
+        <section class="storage" id="storage">
+            <div class="container">
+                <div class="storage-header">
+                    <h2 class="section-title">Decentralized Storage</h2>
+                    <p class="highlight-text">Chilly is one spicy piece of the storage puzzle.</p>
+                </div>
+                <div class="storage-content">
+                    <div class="storage-image">
+                        <div class="plinko-game">
+                            <div class="plinko-header">
+                                <div class="plinko-funnel"></div>
+                                <div class="data-ball">
+                                    <span class="data-size"></span>
+                                </div>
+                            </div>
+                            <div class="plinko-board">
+                                <!-- Pegs -->
+                                <div class="plinko-peg-row row-1">
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                </div>
+                                <div class="plinko-peg-row row-2">
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                </div>
+                                <div class="plinko-peg-row row-3">
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                </div>
+                                <div class="plinko-peg-row row-4">
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                    <div class="plinko-peg"></div>
+                                </div>
+                            </div>
+                            <div class="plinko-buckets">
+                                <div class="plinko-bucket">
+                                    <div class="bucket-label">Node 1</div>
+                                </div>
+                                <div class="plinko-bucket">
+                                    <div class="bucket-label">Node 2</div>
+                                </div>
+                                <div class="plinko-bucket">
+                                    <div class="bucket-label">Chilly</div>
+                                </div>
+                                <div class="plinko-bucket">
+                                    <div class="bucket-label">Node 4</div>
+                                </div>
+                                <div class="plinko-bucket">
+                                    <div class="bucket-label">Node 5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="storage-text">
+                        <p>As an Earthnode, Chilly will help power World Mobile's decentralized storage solution—serving as a secure, independent home for user data. Instead of relying on massive, centralized server farms, World Mobile distributes data across a network of community-run nodes like ours.</p>
+                        <p>That means your data might live right here on Chilly—kept safe, accessible, and fully under your control.</p>
+                        <div class="storage-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-text"><strong>Secure</strong> – stored and encrypted on independent infrastructure.</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-text"><strong>Accessible</strong> – always ready when you need it.</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-text"><strong>Uncontrolled</strong> – not owned or overseen by big tech.</span>
+                            </div>
+                        </div>
+                        <p>Decentralization isn't just a buzzword—it's about freedom and resilience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is staking difficult?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Not at all. Simply visit the World Mobile staking portal, connect your wallet, select the amount of WMTX you'd like to stake, and confirm. That's it—your tokens will be working for you in no time.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is an Earthnode?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's a spicy piece of tech that helps WorldMobile process telecom data, host decentralized storage, and validate network transactions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much can I earn staking?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Rewards vary based on network activity, amount staked, and time period. Check out our spicy chart above for projections!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my staked WMTX safe?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Your WMTX is secured by audited smart contracts on the World Mobile platform. While Chilly operates the Earthnode, your tokens remain protected within the staking system—safe, secure, and under your control at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="https://x.com/ChillyNode" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+            </div>
+            
+            <div class="legal-links">
+                <a href="privacy-policy.html" rel="noopener noreferrer">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="terms.html" rel="noopener noreferrer">Terms & Conditions</a>
+                <span class="divider">|</span>
+                <a href="disclaimer.html" rel="noopener noreferrer">Risk Disclaimer</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Chilly Earthnode. All rights reserved.</p>
+                <p class="disclaimer-text">Cryptocurrency staking involves risk. Past performance is not indicative of future results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

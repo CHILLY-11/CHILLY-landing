@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+# Prevent search engines from indexing any potential temporary or development files
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.json$
+Disallow: /*.config$
+Disallow: /*.sql$
+Disallow: /*.md$
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://yourwebsite.com/sitemap.xml 
