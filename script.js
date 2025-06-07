@@ -273,6 +273,12 @@ function initPlinkoGame() {
     const pegs = document.querySelectorAll('.plinko-peg');
     const buckets = document.querySelectorAll('.plinko-bucket');
     const board = document.querySelector('.plinko-board');
+
+    // Abort initialization if the game elements are missing (e.g. on
+    // policy pages that still include this script)
+    if (!dataBall || !dataSize || !pegs.length || !buckets.length || !board) {
+        return;
+    }
     
     // Game state variables
     let isAnimating = false;
