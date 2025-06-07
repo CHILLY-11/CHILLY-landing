@@ -1,6 +1,6 @@
-# Chilly - WorldMobile Earthnode Landing Page
+# Chilly - World Mobile Earthnode Landing Page
 
-A whimsical, MS Paint-style landing page for the Chilly WorldMobile Earthnode.
+A whimsical, MS Paint-style landing page for the Chilly World Mobile Earthnode.
 
 ## Features
 

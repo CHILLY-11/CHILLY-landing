@@ -1,7 +1,7 @@
 {
   "name": "chilly-landing",
   "version": "1.0.0",
-  "description": "Chilly WorldMobile Earthnode Landing Page",
+  "description": "Chilly World Mobile Earthnode Landing Page",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
